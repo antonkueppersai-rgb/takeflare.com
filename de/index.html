@@ -4,21 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Takeflare · Mehr Kunden finden Sie und wählen Sie</title>
-<meta name="description" content="Takeflare baut Google-Profil, Website und wöchentliche Posts für inhabergeführte Betriebe und Kreative. Remote, auf Deutsch, Englisch und Russisch.">
+<meta name="description" content="Takeflare baut Google-Profil, Website und wöchentliche Posts für Salons, Studios, Läden und Kreative. Remote, auf Deutsch, Englisch und Russisch.">
 <link rel="canonical" href="https://takeflare.com/de/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
-<meta name="theme-color" content="#0E1116">
+<meta name="theme-color" content="#FBF6EF">
 <script>/* Light from 07:00 to 21:00 on the visitor's clock, dark the rest of the night */
 (function () { var h = new Date().getHours(), t = h >= 7 && h < 21 ? "light" : "dark", q = /[?&]theme=(light|dark)/.exec(location.search); if (q) t = q[1]; document.documentElement.setAttribute("data-theme", t);
-  var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute("content", t === "light" ? "#F6F7F9" : "#0E1116"); })();</script>
+  var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute("content", t === "light" ? "#FBF6EF" : "#15101A"); })();</script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://takeflare.com/de/">
 <meta property="og:title" content="Takeflare · Gefunden und gewählt werden">
-<meta property="og:description" content="Google-Profil, Website und Posts für inhabergeführte Betriebe und Kreative. Eine Person, vom ersten Gespräch bis zum Posting, remote.">
+<meta property="og:description" content="Google-Profil, Website und Posts für Salons, Studios, Läden und Kreative. Eine Person, vom ersten Gespräch bis zum Posting, remote.">
 <meta property="og:image" content="https://takeflare.com/og-image.png">
 <!-- seo:start (written by scripts/site_seo.py, edit .claude/skills/site-seo/sites/takeflare.json) -->
 <link rel="alternate" hreflang="en" href="https://takeflare.com/">
@@ -35,7 +36,7 @@
    "@id": "https://takeflare.com/#business",
    "name": "Takeflare",
    "url": "https://takeflare.com/de/",
-   "description": "Takeflare baut Google-Profil, Website und wöchentliche Posts für inhabergeführte Betriebe und Kreative. Remote, auf Deutsch, Englisch und Russisch.",
+   "description": "Takeflare baut Google-Profil, Website und wöchentliche Posts für Salons, Studios, Läden und Kreative. Remote, auf Deutsch, Englisch und Russisch.",
    "logo": "https://takeflare.com/apple-touch-icon.png",
    "image": "https://takeflare.com/og-image.png",
    "email": "anton@takeflare.com",
@@ -59,8 +60,16 @@
    "makesOffer": [
     {
      "@type": "Offer",
+     "name": "Kostenloser Google-Check",
+     "description": "Schicken Sie den Link zu Ihrem Google-Profil und bekommen Sie innerhalb von zwei Tagen fünf Punkte per E-Mail: Name und Kategorie, Öffnungszeiten, Fotos, Bewertungen und Antworten, Website und Posts.",
+     "priceCurrency": "EUR",
+     "url": "https://takeflare.com/de/#prices",
+     "price": 0
+    },
+    {
+     "@type": "Offer",
      "name": "Startpaket",
-     "description": "Name für Ihren Betrieb, falls Sie einen neuen brauchen, Logo in zwei Runden Entwürfen, Google-Unternehmensprofil eingerichtet und ausgefüllt, Website fürs Handy auf Ihrer eigenen Domain. Die Hälfte vorab, die Hälfte, wenn alles live ist.",
+     "description": "Name für Ihren Betrieb, falls Sie einen neuen brauchen, Logo in zwei Runden Entwürfen, Google-Unternehmensprofil eingerichtet und ausgefüllt, Website fürs Handy auf Ihrer eigenen Domain. Live in etwa vier Wochen. Die Hälfte vorab, die Hälfte, wenn alles live ist.",
      "priceCurrency": "EUR",
      "url": "https://takeflare.com/de/#prices",
      "price": 1249
@@ -122,6 +131,14 @@
    "url": "https://takeflare.com/de/",
    "inLanguage": "de",
    "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ist der Google-Check wirklich kostenlos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Sie schicken den Link, ich schicke Ihnen die fünf Punkte und was zu tun ist. Kein Gespräch, und nichts weiter, außer Sie schreiben zurück."
+     }
+    },
     {
      "@type": "Question",
      "name": "Arbeiten Sie auch mit Betrieben außerhalb Deutschlands?",
@@ -191,171 +208,227 @@
       <li><a href="#ueber">Über mich</a></li>
     </ul>
     <div class="lang" aria-label="Sprache"><a href="/" lang="en" hreflang="en">EN</a><a href="/de/" aria-current="page" lang="de">DE</a></div>
-    <a class="btn btn-main" href="mailto:anton@takeflare.com?subject=Kostenloses%20Gespr%C3%A4ch">Gespräch buchen</a>
+    <a class="btn btn-main" href="#check">Gratis Google-Check</a>
   </div>
 </header>
 
 <main id="main">
 
 <section class="hero">
-  <video class="hero-vid" muted loop playsinline preload="none" aria-hidden="true" data-light="/img/hero-loop-light.mp4" data-dark="/img/hero-loop.mp4"></video>
   <div class="wrap">
     <div>
-      <p class="label">Digitales Marketing · remote</p>
-      <h1>Sie sind gut in dem, was Sie tun. Jetzt sollen die Leute Sie <em>auch finden</em>.</h1>
-      <p class="lead">Takeflare baut und betreut das Marketing, das Kunden bringt: Ihr Google-Profil, eine Website, der man vertraut, und jede Woche neue Posts. Für inhabergeführte Betriebe und Kreative, auf Deutsch, Englisch oder Russisch.</p>
+      <p class="hello"><img src="/img/anton.jpg" alt="" width="56" height="56">Hallo, ich bin Anton.</p>
+      <h1>Für Salons, Studios und Läden: gefunden und <em>gewählt</em> werden.</h1>
+      <p class="lead">Ich richte Ihr Google-Profil ein, baue eine Website, der man vertraut, und plane jede Woche neue Posts. Danach halte ich alles aktuell. Für inhabergeführte Betriebe und Kreative, auf Deutsch, Englisch oder Russisch.</p>
       <div class="ctas">
-        <a class="btn btn-main" href="mailto:anton@takeflare.com?subject=Kostenloses%20Gespr%C3%A4ch">Kostenloses 20-Minuten-Gespräch <span class="arrow">→</span></a>
-        <a class="btn btn-ghost" href="#preise">Preise ansehen</a>
+        <a class="btn btn-main" href="#check">Kostenloser Google-Check <span class="arrow">→</span></a>
+        <a class="btn btn-line" href="#preise">Preise ansehen</a>
       </div>
       <ul class="facts">
-        <li>Eine Person, von Anfang bis Ende</li>
         <li>Alle Konten gehören Ihnen</li>
-        <li>DE · EN · RU</li>
         <li>Feste Preise</li>
+        <li>Deutsch · English · Русский</li>
       </ul>
     </div>
+    <figure class="portrait">
+      <img src="/img/anton.jpg" alt="Anton Küppers, der Takeflare betreibt" width="640" height="800">
+      <span class="badge"><img src="/mark.svg" alt="" width="40" height="40"></span>
+      <figcaption class="sticker">Eine Person, von Anfang bis Ende<small>Kein Account-Manager dazwischen</small></figcaption>
+    </figure>
   </div>
 </section>
 
-<div class="ticker" aria-label="Was Takeflare macht: Google-Profil, Website, Instagram, Facebook, Posts jede Woche, Name und Logo, auf Deutsch, Englisch und Russisch">
-  <div class="track" aria-hidden="true">
-    <span>Google-Profil</span><span>Website</span><span>Instagram</span><span>Facebook</span><span>Posts jede Woche</span><span>Name und Logo</span><span>Deutsch · English · Русский</span>
-    <span>Google-Profil</span><span>Website</span><span>Instagram</span><span>Facebook</span><span>Posts jede Woche</span><span>Name und Logo</span><span>Deutsch · English · Русский</span>
-  </div>
-</div>
-
-<section class="band reveal">
-  <div class="wrap split">
-    <div>
-      <p class="label">Warum das Telefon still bleibt</p>
-      <h2>Gute Betriebe werden aus kleinen, lösbaren Gründen übersehen.</h2>
-      <figure class="one">
-        <img src="/img/one-of-many.jpg" alt="" width="900" height="900" loading="lazy">
-        <figcaption>Ein Laden unter vierzig in der Nähe. Die Aufgabe: dass die Leute genau ihn wählen.</figcaption>
-      </figure>
-    </div>
-    <div>
-      <p class="lead" style="margin-bottom:24px">Die Arbeit ist gut, die Bewertungen sind freundlich. Trotzdem kommen kaum neue Leute. Meistens liegt es an einem dieser Punkte:</p>
-      <ul class="gaps">
-        <li><span class="n">01</span><span>Das Google-Profil ist halb ausgefüllt, also tauchen Sie nicht auf, wenn jemand in der Nähe sucht.</span></li>
-        <li><span class="n">02</span><span>Es gibt keine Website, oder eine, die seit Jahren keiner angefasst hat und noch die alten Preise zeigt.</span></li>
-        <li><span class="n">03</span><span>Auf Instagram stehen ein paar Posts mit altem Logo, dann monatelang nichts.</span></li>
-        <li><span class="n">04</span><span>Niemand hat in einem klaren Satz aufgeschrieben, warum man Sie wählen sollte und nicht den Laden nebenan.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="ablauf" class="reveal">
+<section id="check" class="check">
   <div class="wrap">
-    <div class="head how-head">
-      <div>
-        <p class="label">Ablauf</p>
-        <h2>Vier Schritte, und bei jedem entscheiden Sie.</h2>
-        <p class="lead">So sehen die ersten vier Wochen meistens aus.</p>
+    <div>
+      <p class="kicker" style="color:inherit">Kostenlos, ohne Gespräch</p>
+      <h2>Schicken Sie mir Ihren Google-Link. Ich sage Ihnen, was <em>fehlt</em>.</h2>
+      <p>Ich prüfe Ihr Google-Profil in fünf Punkten und schreibe Ihnen innerhalb von zwei Tagen, was fehlt. Kostenlos, und das meiste können Sie selbst beheben.</p>
+      <div class="ctas">
+        <a class="btn btn-plum" href="mailto:anton@takeflare.com?subject=Kostenloser%20Google-Check&amp;body=Hallo%20Anton%2C%20hier%20ist%20der%20Link%20zu%20meinem%20Google-Profil%3A%20">Google-Link schicken <span class="arrow">→</span></a>
       </div>
-      <div class="board" aria-label="Beispiel für einen Startplan">
-        <div class="board-top"><span>Startplan</span><span class="tag">Beispiel</span></div>
-        <ol class="rows">
-          <li><span class="wk">Wo 1</span><span class="what">Gespräch, dann ein Plan auf einer Seite</span><span class="bar"><i style="--w:100%;--d:.2s"></i></span></li>
-          <li><span class="wk">Wo 2</span><span class="what">Name und Logo, zwei Runden</span><span class="bar"><i style="--w:100%;--d:.45s"></i></span></li>
-          <li><span class="wk">Wo 3</span><span class="what">Google-Profil und Website</span><span class="bar"><i style="--w:100%;--d:.7s"></i></span></li>
-          <li><span class="wk">Wo 4</span><span class="what">Instagram und Facebook live</span><span class="bar"><i style="--w:72%;--d:.95s"></i></span></li>
-        </ol>
-        <div class="board-foot"><span><span class="spark" aria-hidden="true"></span>Danach jede Woche Posts</span><strong class="mono">129 €/Monat</strong></div>
-      </div>
+      <p class="small">Den Link finden Sie in Google Maps unter Teilen, dann Link kopieren. Mehr brauche ich nicht.</p>
     </div>
-    <ol class="steps">
-      <li><span class="n">01</span><h3>Kostenloses Gespräch</h3><p>20 Minuten über Ihren Betrieb und die Kunden, von denen Sie mehr möchten. Keine Folien.</p></li>
-      <li><span class="n">02</span><h3>Plan auf einer Seite</h3><p>Was sich zu sagen lohnt, wo, und was es kostet. Sie sagen ja, ändern etwas oder lassen es.</p></li>
-      <li><span class="n">03</span><h3>Umsetzung</h3><p>Name und Logo, falls nötig, dann Google-Profil, Website und Social-Media-Konten. Sie wählen aus nummerierten Entwürfen.</p></li>
-      <li><span class="n">04</span><h3>Dranbleiben</h3><p>Jede Woche geplante und veröffentlichte Posts, und Ihr Google-Profil bleibt aktuell: Zeiten, Fotos, Preise.</p></li>
-    </ol>
+    <div class="note">
+      <h3>Der Fünf-Punkte-Check</h3>
+      <ol>
+        <li><span><b>Name und Kategorie</b><span>Weiß Google, was Sie sind, damit Sie bei den richtigen Suchen auftauchen?</span></span></li>
+        <li><span><b>Öffnungszeiten, Telefon, Adresse</b><span>Richtig und vollständig, auch an Feiertagen.</span></span></li>
+        <li><span><b>Fotos</b><span>Aktuell und hell, mit Ihrer Arbeit, nicht nur der Eingangstür.</span></span></li>
+        <li><span><b>Bewertungen und Antworten</b><span>Wie viele, wie aktuell, und ob Sie darauf antworten.</span></span></li>
+        <li><span><b>Website und Posts</b><span>Ein Link, der funktioniert, und etwas Neues im letzten Monat.</span></span></li>
+      </ol>
+    </div>
   </div>
 </section>
 
-<section id="preise" class="band reveal">
+<section id="bekommen" class="reveal">
   <div class="wrap">
     <div class="head">
-      <p class="label">Preise</p>
-      <h2>Feste Preise, schriftlich vor dem Start.</h2>
-      <p class="lead">Nehmen Sie das ganze Startpaket oder nur das Stück, das Ihnen fehlt.</p>
+      <p class="kicker">Was Sie bekommen</p>
+      <h2>Dinge, die Ihre Kunden <em>wirklich sehen</em>.</h2>
+      <p class="lead">Fürs Handy gebaut, in Ihren Farben und in der Sprache Ihrer Kunden.</p>
+    </div>
+    <div class="table">
+      <figure class="obj">
+        <div class="phone" aria-hidden="true">
+          <div class="map"></div>
+          <div class="body">
+            <div class="name">Studio Mira</div>
+            <div class="cat">Friseursalon · Berlin</div>
+            <div class="open">Geöffnet · bis 19 Uhr</div>
+            <div class="acts"><i>Anrufen</i><i>Route</i><i>Website</i></div>
+            <div class="pics"><i></i><i></i><i></i></div>
+            <div class="rows"><div><b>Preise</b><span>12 Leistungen</span></div><div><b>Termin</b><span>Online</span></div></div>
+          </div>
+        </div>
+        <figcaption>Google-Profil<span>Dort schauen Kunden aus der Nähe zuerst</span><em class="ex">Beispiel</em></figcaption>
+      </figure>
+      <figure class="obj">
+        <div class="paper" aria-hidden="true">
+          <div class="t">Studio Mira</div>
+          <div class="s">Preise</div>
+          <div class="r"><span>Schneiden, Föhnen</span><span></span><b>48</b></div>
+          <div class="r"><span>Farbe, ab</span><span></span><b>85</b></div>
+          <div class="r"><span>Föhnen</span><span></span><b>32</b></div>
+          <div class="r"><span>Kinderschnitt</span><span></span><b>22</b></div>
+          <div class="r"><span>Pflege</span><span></span><b>18</b></div>
+          <div class="f">Online buchen oder einfach vorbeikommen</div>
+        </div>
+        <figcaption>Preisliste<span>Für die Theke gedruckt, auch online</span><em class="ex">Beispiel</em></figcaption>
+      </figure>
+      <figure class="obj">
+        <div class="qr" aria-hidden="true">
+          <div class="t">Zufrieden mit Ihrem Besuch?</div>
+          <svg class="qr-code" viewBox="-1 -1 27 27" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h7v1h-7zM8 0h5v1h-5zM14 0h2v1h-2zM18 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h3v1h-3zM12 1h2v1h-2zM15 1h2v1h-2zM18 1h1v1h-1zM24 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM11 2h1v1h-1zM15 2h1v1h-1zM18 2h1v1h-1zM20 2h3v1h-3zM24 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM9 3h3v1h-3zM13 3h2v1h-2zM18 3h1v1h-1zM20 3h3v1h-3zM24 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM8 4h1v1h-1zM15 4h1v1h-1zM18 4h1v1h-1zM20 4h3v1h-3zM24 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h2v1h-2zM12 5h5v1h-5zM18 5h1v1h-1zM24 5h1v1h-1zM0 6h7v1h-7zM12 6h3v1h-3zM18 6h7v1h-7zM10 7h1v1h-1zM14 7h3v1h-3zM0 8h1v1h-1zM5 8h2v1h-2zM8 8h1v1h-1zM11 8h2v1h-2zM15 8h3v1h-3zM20 8h1v1h-1zM24 8h1v1h-1zM1 9h2v1h-2zM7 9h1v1h-1zM10 9h4v1h-4zM15 9h3v1h-3zM19 9h2v1h-2zM23 9h1v1h-1zM3 10h4v1h-4zM8 10h2v1h-2zM12 10h1v1h-1zM16 10h1v1h-1zM18 10h2v1h-2zM0 11h1v1h-1zM5 11h1v1h-1zM7 11h1v1h-1zM12 11h1v1h-1zM16 11h6v1h-6zM0 12h1v1h-1zM3 12h1v1h-1zM6 12h1v1h-1zM8 12h2v1h-2zM12 12h2v1h-2zM15 12h3v1h-3zM19 12h1v1h-1zM21 12h3v1h-3zM1 13h1v1h-1zM5 13h3v1h-3zM9 13h3v1h-3zM14 13h2v1h-2zM19 13h2v1h-2zM22 13h2v1h-2zM2 14h1v1h-1zM4 14h1v1h-1zM6 14h2v1h-2zM10 14h2v1h-2zM13 14h7v1h-7zM21 14h1v1h-1zM23 14h2v1h-2zM0 15h3v1h-3zM5 15h2v1h-2zM8 15h1v1h-1zM10 15h2v1h-2zM13 15h1v1h-1zM17 15h1v1h-1zM21 15h4v1h-4zM0 16h1v1h-1zM2 16h3v1h-3zM8 16h7v1h-7zM16 16h9v1h-9zM8 17h3v1h-3zM16 17h1v1h-1zM20 17h1v1h-1zM23 17h1v1h-1zM0 18h7v1h-7zM14 18h3v1h-3zM18 18h1v1h-1zM20 18h1v1h-1zM24 18h1v1h-1zM0 19h1v1h-1zM6 19h1v1h-1zM8 19h3v1h-3zM12 19h1v1h-1zM15 19h2v1h-2zM20 19h1v1h-1zM22 19h3v1h-3zM0 20h1v1h-1zM2 20h3v1h-3zM6 20h1v1h-1zM9 20h1v1h-1zM11 20h3v1h-3zM15 20h6v1h-6zM22 20h3v1h-3zM0 21h1v1h-1zM2 21h3v1h-3zM6 21h1v1h-1zM11 21h1v1h-1zM13 21h9v1h-9zM23 21h1v1h-1zM0 22h1v1h-1zM2 22h3v1h-3zM6 22h1v1h-1zM10 22h5v1h-5zM16 22h1v1h-1zM18 22h2v1h-2zM21 22h2v1h-2zM0 23h1v1h-1zM6 23h1v1h-1zM8 23h1v1h-1zM11 23h2v1h-2zM14 23h4v1h-4zM20 23h1v1h-1zM22 23h1v1h-1zM24 23h1v1h-1zM0 24h7v1h-7zM8 24h8v1h-8zM19 24h2v1h-2zM22 24h3v1h-3z"/></svg>
+          <div class="stars">★★★★★</div>
+          <div class="s">Scannen und bewerten</div>
+        </div>
+        <figcaption>Bewertungskarte<span>Öffnet Ihre Google-Bewertungen</span><em class="ex">Beispiel</em></figcaption>
+      </figure>
+      <figure class="obj">
+        <div class="gram" aria-hidden="true">
+          <div class="top"><i></i>studio mira</div>
+          <div class="grid"><i>Neu</i><i></i><i></i><i></i><i>Zeiten</i><i></i><i></i><i></i><i>Preise</i></div>
+        </div>
+        <figcaption>Instagram<span>Jede Woche neue Posts</span><em class="ex">Beispiel</em></figcaption>
+      </figure>
+    </div>
+    <p class="table-note">Beispiele für einen ausgedachten Salon. Ihre bekommen Ihren Namen, Ihre Fotos und Ihre Farben.</p>
+  </div>
+</section>
+
+<section id="preise" class="prices-sec reveal">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Preise</p>
+      <h2>Feste Preise, und wie <em>lange</em> es dauert.</h2>
+      <p class="lead">Schriftlich vor dem Start. Nehmen Sie das ganze Startpaket oder nur das Stück, das Ihnen fehlt.</p>
     </div>
     <div class="prices">
-      <div class="card main">
-        <span class="tag">Am häufigsten</span>
+      <div class="pcard main">
         <h3>Startpaket</h3>
-        <p class="price">1.249 €</p>
-        <p class="note">Die Hälfte vorab, die Hälfte, wenn alles live ist.</p>
+        <p class="big">1.249 €</p>
+        <span class="time">Live in etwa 4 Wochen</span>
         <ul class="ticks">
           <li>Name für Ihren Betrieb, falls Sie einen neuen brauchen</li>
           <li>Logo, zwei Runden Entwürfe</li>
           <li>Google-Unternehmensprofil, eingerichtet und ausgefüllt</li>
           <li>Website, fürs Handy gebaut, auf Ihrer eigenen Domain</li>
         </ul>
+        <p class="pnote">Die Hälfte vorab, die Hälfte, wenn alles live ist.</p>
         <a class="btn btn-main" href="mailto:anton@takeflare.com?subject=Startpaket">Zum Startpaket anfragen <span class="arrow">→</span></a>
       </div>
-      <div class="card">
-        <h3>Einzeln</h3>
-        <ul class="menu" style="margin-top:20px">
-          <li><span>Monatliche Betreuung<span class="sub">Wöchentliche Posts und Pflege des Google-Profils</span></span><span>129 €/Monat</span></li>
-          <li><span>Google-Unternehmensprofil</span><span>249 €</span></li>
-          <li><span>Website</span><span>550 €</span></li>
-          <li><span>Logo<span class="sub">Zwei Runden Entwürfe</span></span><span>300 €</span></li>
-          <li><span>Name für Ihren Betrieb</span><span>150 €</span></li>
-          <li><span>Kleine Werbe-Tests<span class="sub">Werbebudget zahlen Sie direkt an die Plattform</span></span><span>auf Anfrage</span></li>
-        </ul>
+      <div class="stack">
+        <div class="pcard">
+          <div class="care">
+            <div><h3>Monatliche Betreuung</h3><p class="big">129 € <small>/ Monat</small></p></div>
+            <span class="time">Jede Woche Posts</span>
+          </div>
+          <p class="pnote" style="margin:14px 0 0">Posts geplant und veröffentlicht, und Ihr Google-Profil bleibt aktuell: Zeiten, Fotos, Preise.</p>
+        </div>
+        <div class="pcard">
+          <h3>Einzeln</h3>
+          <ul class="menu">
+            <li><span class="what">Google-Unternehmensprofil</span><span class="when">Etwa 1 Woche, plus Googles eigene Prüfung</span><span class="p">249 €</span></li>
+            <li><span class="what">Website</span><span class="when">Etwa 2 Wochen, auf Ihrer eigenen Domain</span><span class="p">550 €</span></li>
+            <li><span class="what">Logo</span><span class="when">Etwa 2 Wochen, zwei Runden Entwürfe</span><span class="p">300 €</span></li>
+            <li><span class="what">Name für Ihren Betrieb</span><span class="when">Etwa 1 Woche</span><span class="p">150 €</span></li>
+            <li><span class="what">Kleine Werbe-Tests</span><span class="when">Werbebudget zahlen Sie direkt an die Plattform</span><span class="p" style="font-size:20px">auf Anfrage</span></li>
+          </ul>
+        </div>
       </div>
     </div>
     <p class="fine">Druck, Buchungstools und andere fremde Kosten sind nicht enthalten. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</p>
   </div>
 </section>
 
+<section id="ablauf" class="reveal">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Ablauf</p>
+      <h2>Vier Wochen, und bei jedem Schritt <em>entscheiden</em> Sie.</h2>
+      <p class="lead">So sieht ein Start meistens aus. Schneller, wenn Name und Logo schon da sind.</p>
+    </div>
+    <ol class="weeks">
+      <li><span class="wk">Woche 1</span><h3>Gespräch, dann ein Plan</h3><p>20 Minuten über Ihren Betrieb, dann eine Seite: was Sie sagen, wo, und was es kostet. Sie sagen ja, ändern etwas oder lassen es.</p></li>
+      <li><span class="wk">Woche 2</span><h3>Name und Logo</h3><p>Nur wenn Sie sie brauchen. Zwei Runden nummerierte Entwürfe, Sie wählen.</p></li>
+      <li><span class="wk">Woche 3</span><h3>Google und Website</h3><p>Ihr Google-Profil richtig ausgefüllt und eine Website, die auf dem Handy funktioniert.</p></li>
+      <li><span class="wk">Woche 4</span><h3>Sie sind live</h3><p>Instagram und Facebook eingerichtet, die ersten Posts sind draußen.</p></li>
+      <li><span class="wk">Danach jede Woche</span><h3>Dranbleiben</h3><p>Posts, mit Ihnen geplant und veröffentlicht, und ein Google-Profil, das aktuell bleibt.</p></li>
+    </ol>
+  </div>
+</section>
+
 <section id="arbeiten" class="reveal">
   <div class="wrap">
     <div class="head">
-      <p class="label">Aktuelle Arbeiten</p>
-      <h2>Echte Projekte, ohne Namen.</h2>
+      <p class="kicker">Aktuelle Arbeiten</p>
+      <h2>Echte Projekte, <em>ohne Namen</em>.</h2>
       <p class="lead">Kunden bleiben hier anonym, bis sie etwas anderes sagen. Ergebnisse kommen nur mit dem OK der Inhaberin oder des Inhabers dazu, deshalb steht hier, was gemacht wurde.</p>
     </div>
     <div class="work">
-      <article class="card">
+      <article class="wcard">
         <img class="cover" src="/img/work-beauty-studio.jpg" alt="" width="1200" height="806" loading="lazy">
-        <p class="meta">Kosmetikstudio · Deutschland · seit Okt. 2026</p>
-        <h3>Ein neuer Auftritt für ein Studio, das aus seinem alten Look herausgewachsen war</h3>
-        <ul class="chips"><li>Neuer Name</li><li>Logo</li><li>Google-Profil</li><li>Instagram-Look</li><li>Preisliste</li><li>Ein Monat Posts</li></ul>
-        <p class="status"><b>Stand:</b> Der erste Monat Posts läuft. Zahlen kommen hierher, sobald die Inhaberin OK sagt.</p>
+        <div class="in">
+          <p class="meta">Kosmetikstudio · Deutschland · seit Okt. 2026</p>
+          <h3>Ein neuer Auftritt für ein Studio, das aus seinem alten Look herausgewachsen war</h3>
+          <ul class="chips"><li>Neuer Name</li><li>Logo</li><li>Google-Profil</li><li>Instagram-Look</li><li>Preisliste</li><li>Ein Monat Posts</li></ul>
+          <p class="status"><b>Stand:</b> Der erste Monat Posts läuft. Zahlen kommen hierher, sobald die Inhaberin OK sagt.</p>
+        </div>
       </article>
-      <article class="card">
+      <article class="wcard">
         <img class="cover" src="/img/work-author-songwriter.jpg" alt="" width="1200" height="806" loading="lazy">
-        <p class="meta">Autor und Songwriter · 2026</p>
-        <h3>Kurze Videos, damit ein neuer Roman seine Leser findet</h3>
-        <ul class="chips"><li>Videoplan</li><li>Skripte</li><li>Test-Clips</li></ul>
-        <p class="status"><b>Stand:</b> Skripte fertig, erste Clips im Test.</p>
+        <div class="in">
+          <p class="meta">Autor und Songwriter · 2026</p>
+          <h3>Kurze Videos, damit ein neuer Roman seine Leser findet</h3>
+          <ul class="chips"><li>Videoplan</li><li>Skripte</li><li>Test-Clips</li></ul>
+          <p class="status"><b>Stand:</b> Skripte fertig, erste Clips im Test.</p>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="ueber" class="band reveal">
+<section id="ueber" class="reveal">
   <div class="wrap about">
-    <img src="/img/anton.jpg" alt="Anton Küppers" width="640" height="800" loading="lazy">
+    <p class="quote">„Jeder Umzug hieß: wieder bei null anfangen. Das ist eigentlich der größte Teil von <em>Marketing</em>.“</p>
     <div class="body">
-      <p class="label">Über mich</p>
-      <h2 style="margin-bottom:24px">Ich bin Anton. Das violette „ak“ im Logo bin ich.</h2>
-      <p>Ich bin in sieben Ländern aufgewachsen, bevor ich in Berlin angekommen bin. Jeder Umzug hieß: wieder bei null anfangen, neue Sprache, neue Leute, neue Gründe, warum sie mir vertrauen sollten. Das ist eigentlich der größte Teil von Marketing.</p>
-      <p>Ich habe im Social-Media-Bereich gearbeitet und mache jetzt das Ganze für kleine Betriebe und Kreative: Name, Look, Google-Profil, Posts. Sie sprechen vom ersten Gespräch bis zum hundertsten Post mit mir, ohne Account-Manager dazwischen.</p>
+      <p class="kicker">Über mich</p>
+      <h2>Das violette „ak“ im Logo bin ich.</h2>
+      <p>Ich bin in sieben Ländern aufgewachsen, bevor ich in Berlin angekommen bin. Jeder Umzug hieß: neue Sprache, neue Leute, neue Gründe, warum sie mir vertrauen sollten.</p>
+      <p>Ich habe im Social-Media-Bereich gearbeitet und mache jetzt das Ganze für kleine Betriebe und Kreative: Name, Look, Google-Profil, Posts. Sie sprechen vom ersten Gespräch bis zum hundertsten Post mit mir.</p>
       <p>Für Entwürfe und Recherche nutze ich KI, deshalb geht es schnell. Jedes Design und jeder Post wird trotzdem von einem Menschen ausgewählt, erst von mir, dann von Ihnen.</p>
       <p class="route">Ukraine → Russland → Georgien → Indien → Rumänien → Pakistan → USA → <b>Berlin</b></p>
     </div>
   </div>
 </section>
 
-<section class="reveal">
+<section class="reveal" style="padding-top:40px">
   <div class="wrap">
-    <div class="head"><p class="label">Fragen</p><h2>Bevor Sie fragen.</h2></div>
+    <div class="head"><p class="kicker">Fragen</p><h2>Bevor Sie fragen.</h2></div>
     <div class="faq">
+      <details><summary>Ist der Google-Check wirklich kostenlos?</summary><p>Ja. Sie schicken den Link, ich schicke Ihnen die fünf Punkte und was zu tun ist. Kein Gespräch, und nichts weiter, außer Sie schreiben zurück.</p></details>
       <details><summary>Arbeiten Sie auch mit Betrieben außerhalb Deutschlands?</summary><p>Ja. Alles läuft remote, per Videocall, WhatsApp oder E-Mail und über geteilte Dateien. Sie müssen nicht in Berlin sein.</p></details>
       <details><summary>In welchen Sprachen?</summary><p>Deutsch, Englisch und Russisch, im Gespräch und in den Posts und Seiten selbst.</p></details>
       <details><summary>Wem gehören die Konten?</summary><p>Ihnen. Google-Profil, Domain und Social-Media-Konten laufen auf Ihren Namen. Ich bekomme Zugriff für die Arbeit, und die Schlüssel bleiben bei Ihnen, falls wir einmal aufhören.</p></details>
@@ -368,13 +441,13 @@
 
 <section class="final">
   <div class="wrap">
-    <img class="final-mark" src="/mark.svg" alt="" width="56" height="56">
-    <h2>Erzählen Sie mir von Ihrem Betrieb.</h2>
-    <p class="lead">Ein kostenloses 20-Minuten-Gespräch. Sie gehen mit mindestens einer Sache raus, die Sie noch am selben Tag selbst verbessern können.</p>
+    <h2>Erzählen Sie mir von Ihrem <em>Betrieb</em>.</h2>
+    <p class="lead">Starten Sie mit dem kostenlosen Google-Check oder buchen Sie ein 20-Minuten-Gespräch. So oder so haben Sie danach mindestens eine Sache, die Sie noch am selben Tag selbst verbessern können.</p>
     <div class="ctas">
-      <a class="btn btn-main" href="mailto:anton@takeflare.com?subject=Kostenloses%20Gespr%C3%A4ch">Gespräch buchen <span class="arrow">→</span></a>
-      <span class="or">oder schreiben Sie an <a href="mailto:anton@takeflare.com">anton@takeflare.com</a></span>
+      <a class="btn btn-main" href="mailto:anton@takeflare.com?subject=Kostenloser%20Google-Check&amp;body=Hallo%20Anton%2C%20hier%20ist%20der%20Link%20zu%20meinem%20Google-Profil%3A%20">Kostenloser Google-Check <span class="arrow">→</span></a>
+      <a class="btn btn-line" href="mailto:anton@takeflare.com?subject=Kostenloses%20Gespr%C3%A4ch">20-Minuten-Gespräch buchen</a>
     </div>
+    <span class="or">oder schreiben Sie an <a href="mailto:anton@takeflare.com">anton@takeflare.com</a></span>
   </div>
 </section>
 
@@ -396,12 +469,6 @@ document.documentElement.classList.add('js');
   var nav = document.querySelector('.nav');
   var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 8); };
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  var v = document.querySelector('.hero-vid');
-  if (v && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    v.src = v.getAttribute('data-' + document.documentElement.getAttribute('data-theme'));
-    v.addEventListener('canplay', function () { v.classList.add('on'); }, { once: true });
-    v.play().catch(function () {});
-  }
   var els = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
   var io = new IntersectionObserver(function (entries) {
